@@ -1,0 +1,2 @@
+# tscode
+TypeScript code
