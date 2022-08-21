@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import basic from './basic';
 import creational from './creational';
 import structural from './structural';
@@ -9,7 +10,7 @@ const title =
 export default function (): void {
   console.log(`\t${title}`);
   basic();
-  creational();
-  structural();
-  behavioral();
+  // creational();
+  // structural();
+  // behavioral();
 }
