@@ -16,6 +16,16 @@ TypeScript code
   "watch": ["src"],
   "ext": ".ts,.js",
   "ignore": [],
+  "exec": "ts-node ./src/index.ts && tsc"
+}
+```
+
+### nodemon starts with prettier 
+```
+{
+  "watch": ["src"],
+  "ext": ".ts,.js",
+  "ignore": [],
   "exec": "prettier --config .prettierrc 'src/**/*.ts' --write && ts-node ./src/index.ts && tsc"
 }
 ```
