@@ -9,3 +9,13 @@ TypeScript code
 	--esModuleInterop --resolveJsonModule --lib es6 \
 	--module commonjs --allowJs true --noImplicitAny true
 ```
+
+## Nodemon config - nodemon.json
+```
+{
+  "watch": ["src"],
+  "ext": ".ts,.js",
+  "ignore": [],
+  "exec": "prettier --config .prettierrc 'src/**/*.ts' --write && ts-node ./src/index.ts && tsc"
+}
+```
