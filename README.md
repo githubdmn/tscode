@@ -9,6 +9,7 @@ TypeScript code
 	--esModuleInterop --resolveJsonModule --lib es6 \
 	--module commonjs --allowJs true --noImplicitAny true
 ```
+
 ## Nodemon config - nodemon.json
 ```
 {
