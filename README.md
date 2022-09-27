@@ -19,6 +19,17 @@ TypeScript code
   "exec": "ts-node ./src/index.ts && tsc"
 }
 ```
+## Prettier config - .prettierrc
+
+```
+{
+  "useTabs": false,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "endOfLine": "auto"
+}
+```
 
 ### nodemon starts with prettier 
 ```
