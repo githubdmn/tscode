@@ -2,6 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const title = 'Creational Design Patterns in TypeScript';
 function default_1() {
-    console.log(`\t\t${title}`);
+    console.log(`\->${title}`);
 }
 exports.default = default_1;

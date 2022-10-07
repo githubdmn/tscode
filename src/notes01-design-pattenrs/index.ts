@@ -8,9 +8,9 @@ const title =
   'Design Patterns in TypeScript - Creational, Structural and Behavioral';
 
 export default function (): void {
-  console.log(`\t${title}`);
-  basic();
-  // creational();
+  // console.log(` ${title}`);
+  // basic();
+  creational();
   // structural();
   // behavioral();
 }
