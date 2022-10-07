@@ -1,6 +1,29 @@
 const title = '->->Factory conceptual example';
 
 /**
+ * The Product interface declares the operations that all concrete products must
+ * implement.
+ */
+interface Product {
+  operation(): string;
+}
+
+/**
+ * Concrete Products provide various implementations of the Product interface.
+ */
+class ConcreteProduct1 implements Product {
+  public operation(): string {
+    return '{Result of the ConcreteProduct1}';
+  }
+}
+
+class ConcreteProduct2 implements Product {
+  public operation(): string {
+    return '{Result of the ConcreteProduct2}';
+  }
+}
+
+/**
  * The Creator class declares the factory method that is supposed to return an
  * object of a Product class. The Creator's subclasses usually provide the
  * implementation of this method.
@@ -46,29 +69,6 @@ class ConcreteCreator1 extends Creator {
 class ConcreteCreator2 extends Creator {
   public factoryMethod(): Product {
     return new ConcreteProduct2();
-  }
-}
-
-/**
- * The Product interface declares the operations that all concrete products must
- * implement.
- */
-interface Product {
-  operation(): string;
-}
-
-/**
- * Concrete Products provide various implementations of the Product interface.
- */
-class ConcreteProduct1 implements Product {
-  public operation(): string {
-    return '{Result of the ConcreteProduct1}';
-  }
-}
-
-class ConcreteProduct2 implements Product {
-  public operation(): string {
-    return '{Result of the ConcreteProduct2}';
   }
 }
 

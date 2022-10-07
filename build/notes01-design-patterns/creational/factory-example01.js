@@ -2,6 +2,19 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const title = '->->Factory conceptual example';
 /**
+ * Concrete Products provide various implementations of the Product interface.
+ */
+class ConcreteProduct1 {
+    operation() {
+        return '{Result of the ConcreteProduct1}';
+    }
+}
+class ConcreteProduct2 {
+    operation() {
+        return '{Result of the ConcreteProduct2}';
+    }
+}
+/**
  * The Creator class declares the factory method that is supposed to return an
  * object of a Product class. The Creator's subclasses usually provide the
  * implementation of this method.
@@ -39,19 +52,6 @@ class ConcreteCreator1 extends Creator {
 class ConcreteCreator2 extends Creator {
     factoryMethod() {
         return new ConcreteProduct2();
-    }
-}
-/**
- * Concrete Products provide various implementations of the Product interface.
- */
-class ConcreteProduct1 {
-    operation() {
-        return '{Result of the ConcreteProduct1}';
-    }
-}
-class ConcreteProduct2 {
-    operation() {
-        return '{Result of the ConcreteProduct2}';
     }
 }
 /**
