@@ -1,16 +1,6 @@
 const title = '->->Builder conceptual example';
 
 /**
- * The Builder interface specifies methods for creating the different parts of
- * the Product objects.
- */
-interface Builder {
-  producePartA(): void;
-  producePartB(): void;
-  producePartC(): void;
-}
-
-/**
  * It makes sense to use the Builder pattern only when your products are quite
  * complex and require extensive configuration.
  *
@@ -25,6 +15,17 @@ class Product1 {
     console.log(`Product parts: ${this.parts.join(', ')}\n`);
   }
 }
+
+/**
+ * The Builder interface specifies methods for creating the different parts of
+ * the Product objects.
+ */
+interface Builder {
+  producePartA(): void;
+  producePartB(): void;
+  producePartC(): void;
+}
+
 
 /**
  * The Concrete Builder classes follow the Builder interface and provide
