@@ -48,6 +48,6 @@ function clientCode() {
     }
 }
 
-export default(): void {
+export default(): void => {
   clientCode();
 }
