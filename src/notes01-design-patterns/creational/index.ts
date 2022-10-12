@@ -7,8 +7,10 @@ import abstractFactory01 from './abstract-factory-example01';
 import abstractFactory02 from './abstract-factory-example02';
 import builder01 from './builder-example01';
 import builder02 from './builder-example02';
+import prototype01 from './prototype-example01';
+import prototype02 from './prototype-example02';
 
 export default function (): void {
   console.log(`\->${title}`);
-  builder02();
+  prototype02();
 }
