@@ -10,7 +10,7 @@ const title =
 export default function (): void {
   // console.log(` ${title}`);
   // basic();
-  creational();
-  // structural();
+  // creational();
+  structural();
   // behavioral();
 }

@@ -47,9 +47,7 @@ class Circle extends Shape {
   }
 }
 
-class Application {
-  }
-}
+class Application {}
 
 export default (): void => {
   console.log(title);
